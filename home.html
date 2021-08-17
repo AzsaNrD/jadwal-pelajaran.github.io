@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Jadwal Pelajaran</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-200 text-gray-700 font-poppins" style="background-image: url(../img/dust_scratches.png)">
+    <section class="bg-white shadow-sm">
+      <div class="max-w-screen-lg mx-auto flex py-5 justify-center items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="#1F2937">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <h1 class="text-xl md:text-2xl font-lilita">Jadwal Pelajaran | XII IPS 2</h1>
+      </div>
+    </section>
+
+    <section class="mt-5 p-3 md:p-0">
+      <div class="flex flex-col place-content-center max-w-screen-lg mx-auto bg-white rounded shadow p-5 h-auto border-l-2 border-r-2 border-gray-600">
+        <div class="flex justify-center">
+          <h1 class="font-opensans font-semibold center text-xl">Pilih Hari</h1>
+        </div>
+        <div class="flex flex-col md:flex-row place-content-center md:space-x-5 space-x-0 cursor-pointer my-3 text-sm md:text-base">
+          <div class="bg-gray-200 py-3 px-9 rounded mt-3 text-center transform scale-100 md:hover:scale-110 hover:shadow hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out">
+            <a href="./public/senin.html">Senin</a>
+          </div>
+          <div class="bg-gray-200 py-3 px-9 rounded mt-3 text-center transform scale-100 md:hover:scale-110 hover:shadow hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out">
+            <a href="./public/selasa.html">Selasa</a>
+          </div>
+          <div class="bg-gray-200 py-3 px-9 rounded mt-3 text-center transform scale-100 md:hover:scale-110 hover:shadow hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out">
+            <a href="./public/rabu.html">Rabu</a>
+          </div>
+          <div class="bg-gray-200 py-3 px-9 rounded mt-3 text-center transform scale-100 md:hover:scale-110 hover:shadow hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out">
+            <a href="./public/kamis.html">Kamis</a>
+          </div>
+          <div class="bg-gray-200 py-3 px-9 rounded mt-3 text-center transform scale-100 md:hover:scale-110 hover:shadow hover:bg-gray-300 hover:text-gray-800 transition duration-150 ease-in-out">
+            <a href="./public/jumat.html">Jum'at</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 p-3 md:p-0">
+      <div class="flex flex-col justify-center max-w-screen-lg mx-auto bg-white rounded shadow p-5 h-auto bg-cover bg-fixed" style="background-image: url(../img/bg.jpg);">
+        <div class="flex flex-col p-3 justify-center">
+          <div class="flex md:justify-center space-x-0 md:space-x-10 md:items-center  flex-col md:flex-row">
+
+            <div class="flex flex-col">
+              <div id="date" class="text-center text-base md:text-base">
+                <div class="bg-gray-200 inline-flex space-x-1 px-3 md:px-10 py-2 text-sm md:text-base select-none">
+                  <span id="dayname">Hari</span>,
+                  <span id="daynum">00</span> 
+                  <span id="month">Bulan</span>,
+                  <span id="year">Tahun</span>
+                </div>
+              </div>
+
+              <div id="clock" class="flex justify-center md:space-x-5 space-x-2 md:text-base mt-3 select-none">
+                <div id="time" class="flex place-content-center md:space-x-3 space-x-2">
+                  <div id="hours" class="text-lg md:text-2xl w-[60px] md:w-[80px] h-[40px] bg-gray-200 items-center justify-center flex text-center">00</div>
+                  <div id="minutes" class="text-lg md:text-2xl w-[60px] md:w-[80px] h-[40px] bg-gray-200 items-center justify-center flex text-center">00</div>
+                  <div id="seconds" class="text-lg md:text-2xl w-[60px] md:w-[80px] h-[40px] bg-gray-200 items-center justify-center flex text-center">00</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-flex col justify-center items-center md:mt-0 mt-5">
+              <div class="">
+                <h3 id="selamat" class="text-center text-sm md:text-base text-white">Selamat Pagi, Jangan Lupa absen</h3>
+              </div>
+              <div class="mt-4 flex justify-center">
+                <p class="text-center text-sm md:text-base bg-gray-200 hover:bg-gray-300 rounded-md px-3 py-2">
+                  <a href="http://data.akasmanti.com" id="absen" target="_blank" class=""></a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5 p-3 md:p-0">
+      <div class="max-w-screen-lg mx-auto bg-white rounded shadow p-5 h-auto">
+        <div class="flex justify-center">
+          <h1 class="font-opensans font-semibold text-center text-xl">Tugas</h1>
+        </div>
+        <div class="flex justify-center my-3 rounded">
+          <div class="w-full rounded overflow-auto m-0 md:m-3">
+            <table class="border-collapse min-w-full text-left overflow-x-scroll">
+              <thead class="bg-gray-400">
+                <tr class="text-white">
+                  <th class="p-5 border border-gray-300 tracking-wider">Mata Pelajaran</th>
+                  <th class="p-5 border border-gray-300 tracking-wider">Tugas</th>
+                  <th class="p-5 border border-gray-300 tracking-wider">Pengumpulan</th>
+                  <th class="p-5 border border-gray-300 tracking-wider">Deadline</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm md:text-base">
+                <tr class="bg-gray-200">
+                  <td class="p-5 border border-gray-300">Geografi</td>
+                  <td class="p-5 border border-gray-300">
+                    Cari suatu wilayah di google earth, lalu diprint, Setelah di print, dijiplak pake kertas kalkir lalu dilingkari tata guna lahannya seperti sawah, tambak, pemukiman dll... Kalau bisa dikasih tau nama jalan, legenda,
+                    aliran sungai
+                  </td>
+                  <td class="p-5 border border-gray-300 cursor-pointer"><a href="https://drive.google.com/folderview?id=1VIiynac_2xxd9uu_NCy-ipZQwtb4E6Qa" target="_blank" class="hover:underline">Google Drive</a></td>
+                  <td class="p-5 border border-gray-300">Kamis , 19 Agustus 2021 Jam 18.00</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="px-0 md:px-3">
+          <p>* <span class="underline text-sm font-mono">Update 16 Agustus 2021</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-900 mt-5 p-10 text-sm select-none">
+      <div class="max-w-screen-lg mx-auto flex justify-center items-center">
+        <h1 class="font-opensans text-gray-500">©2021 by Azsa Nurwahyudi</h1>
+      </div>
+    </section>
+  </body>
+  <script src="./public/index.js"></script>
+</html>
