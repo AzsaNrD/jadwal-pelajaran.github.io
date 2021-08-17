@@ -36,19 +36,19 @@ function clock() {
   }
 
   if (h >= 8) {
-    selamat.innerHTML = "Selamat Pagi. . !";
+    selamat.innerHTML = "Selamat Pagi . . .";
   }
 
   if (h >= 12) {
-    selamat.innerHTML = "Selamat Siang . . !";
+    selamat.innerHTML = "Selamat Siang . . .";
   }
 
   if (h >= 15) {
-    selamat.innerHTML = "Selamat Sore . . !";
+    selamat.innerHTML = "Selamat Sore . . .";
   }
 
   if (h >= 18) {
-    selamat.innerHTML = "Selamat Malam";
+    selamat.innerHTML = "Selamat Malam . . .";
   }
 
   hours.innerHTML = h;
