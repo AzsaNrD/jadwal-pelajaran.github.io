@@ -51,7 +51,7 @@ function clock() {
     absent.innerHTML = "";
   }
 
-  if (h >= 18) {
+  if (h >= 18.3) {
     selamat.innerHTML = "Selamat Malam . . .";
     absent.innerHTML = "";
   }
