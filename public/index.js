@@ -38,18 +38,22 @@ function clock() {
 
   if (h >= 8) {
     selamat.innerHTML = "Selamat Pagi . . .";
+    absent.innerHTML = "";
   }
 
   if (h >= 12) {
     selamat.innerHTML = "Selamat Siang . . .";
+    absent.innerHTML = "";
   }
 
   if (h >= 15) {
     selamat.innerHTML = "Selamat Sore . . .";
+    absent.innerHTML = "";
   }
 
   if (h >= 18) {
     selamat.innerHTML = "Selamat Malam . . .";
+    absent.innerHTML = "";
   }
 
   hours.innerHTML = h;
