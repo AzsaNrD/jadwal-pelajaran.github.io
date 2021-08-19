@@ -64,6 +64,7 @@ function clock() {
   hours.innerHTML = h;
   minutes.innerHTML = m;
   seconds.innerHTML = s;
+
 }
 var interval = setInterval(clock, 1000);
 
@@ -88,7 +89,7 @@ function CountdownPKWU() {
   document.getElementById('hari').innerText = h;
   document.getElementById('jam').innerText = j;
   document.getElementById('menit').innerText = m;
-  document.getElementById('detik').innerText = d;
+  document.getElementById('detik').innerText = d
 }
 setInterval( function(){
   CountdownPKWU();
@@ -98,6 +99,9 @@ setInterval( function(){
 var countDate2 = new Date('August 19 2021 18:00:00').getTime();
 
 function CountdownGeo() {
+  const waktuHabis = document.getElementsByClassName('.timeOut');
+  const waktuMundur = document.getElementsByClassName('.countdownGeo');
+
   var now = new Date().getTime();
   gap = countDate2 - now
 
@@ -121,7 +125,7 @@ setInterval( function(){
 }, 1000);
 
 // Countdown Matematika
-var countDate3 = new Date('August 19 2021 23:59:00').getTime();
+var countDate3 = new Date('August 20 2021 23:59:00').getTime();
 
 function CountdownMtk() {
   var now = new Date().getTime();
