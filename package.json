@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "set TAILWIND_MODE=watch&postcss tailwind.css -o styles.css -w --verbose",
     "devpublic": "set TAILWIND_MODE=watch&postcss tailwind.css -o ./public/styles.css -w --verbose",
-    "prod": "NODE_ENV=production tailwind.css -o ./public/styles.css"
+    "prod": "NODE_ENV=production tailwind.css -o styles.css",
+    "prodpublic": "NODE_ENV=production tailwind.css -o ./public/styles.css"
   },
   "keywords": [],
   "author": "",

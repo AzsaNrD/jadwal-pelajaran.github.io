@@ -1039,6 +1039,11 @@ video {
 		line-height: 1.75rem;
 	}
 
+	.md\:text-xs{
+		font-size: 0.75rem;
+		line-height: 1rem;
+	}
+
 	.md\:hover\:scale-110:hover{
 		--tw-scale-x: 1.1;
 		--tw-scale-y: 1.1;
