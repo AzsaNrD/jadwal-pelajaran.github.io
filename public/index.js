@@ -172,3 +172,18 @@ function CountdownGeo2() {
 setInterval( function(){
   CountdownGeo2();
 }, 1000);
+
+// Modal update log
+const modal = document.querySelector('.modal');
+
+const closeModal = document.querySelector('.oke')
+
+const showModal = document.querySelector('.showModal');
+
+showModal.addEventListener('click', function(){
+  modal.classList.remove('hidden')
+});
+
+closeModal.addEventListener('click', function(){
+  modal.classList.add('hidden')
+});
