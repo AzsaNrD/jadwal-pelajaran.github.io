@@ -121,7 +121,7 @@ setInterval( function(){
 }, 1000);
 
 // Countdown Matematika
-var countDate3 = new Date('August 19 2021 23:59:59').getTime();
+var countDate3 = new Date('August 19 2021 23:59:00').getTime();
 
 function CountdownMtk() {
   var now = new Date().getTime();
@@ -147,7 +147,7 @@ setInterval( function(){
 }, 1000);
 
 
-// Countdown Geografi
+// Countdown Geografi 2
 var countDate4 = new Date('August 19 2021 15:00:00').getTime();
 
 function CountdownGeo2() {
