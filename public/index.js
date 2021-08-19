@@ -90,6 +90,12 @@ function CountdownPKWU() {
   document.getElementById('jam').innerText = j;
   document.getElementById('menit').innerText = m;
   document.getElementById('detik').innerText = d
+
+  if (gap < 0) {
+    clearInterval(CountdownPKWU);
+    document.getElementById("countdown1").innerHTML = "";
+    document.getElementById("timeOutPKWU").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+  }
 }
 setInterval( function(){
   CountdownPKWU();
@@ -99,8 +105,6 @@ setInterval( function(){
 var countDate2 = new Date('August 19 2021 18:00:00').getTime();
 
 function CountdownGeo() {
-  const waktuHabis = document.getElementsByClassName('.timeOut');
-  const waktuMundur = document.getElementsByClassName('.countdownGeo');
 
   var now = new Date().getTime();
   gap = countDate2 - now
@@ -119,12 +123,18 @@ function CountdownGeo() {
   document.getElementById('jam2').innerText = j2;
   document.getElementById('menit2').innerText = m2;
   document.getElementById('detik2').innerText = d2;
+
+  if (gap < 0) {
+    clearInterval(CountdownGeo);
+    document.getElementById("countdown2").innerHTML = "";
+    document.getElementById("timeOutGeo").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+  }
 }
 setInterval( function(){
   CountdownGeo();
 }, 1000);
 
-// Countdown Matematika
+// Countdown3 Matematika
 var countDate3 = new Date('August 20 2021 23:59:00').getTime();
 
 function CountdownMtk() {
@@ -145,6 +155,12 @@ function CountdownMtk() {
   document.getElementById('jam3').innerText = j3;
   document.getElementById('menit3').innerText = m3;
   document.getElementById('detik3').innerText = d3;
+
+  if (gap < 0) {
+    clearInterval(CountdownMtk);
+    document.getElementById("countdown3").innerHTML = "";
+    document.getElementById("timeOutMtk").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+  }
 }
 setInterval( function(){
   CountdownMtk();
