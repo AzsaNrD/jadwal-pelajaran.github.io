@@ -146,33 +146,6 @@ setInterval( function(){
   CountdownMtk();
 }, 1000);
 
-
-// Countdown Geografi 2
-var countDate4 = new Date('August 19 2021 15:00:00').getTime();
-
-function CountdownGeo2() {
-  var now = new Date().getTime();
-  gap = countDate4 - now
-
-  var detik4 = 1000;
-  var menit4 = detik4 * 60;
-  var jam4 = menit4 * 60;
-  var hari4 = jam4 * 24;
-  
-  var h4 = Math.floor(gap / (hari4));
-  var j4 = Math.floor((gap % (hari4)) / (jam4));
-  var m4 = Math.floor((gap % (jam4)) / (menit4));
-  var d4 = Math.floor((gap % (menit4) / (detik4)));
-
-  document.getElementById('hari4').innerText = h4;
-  document.getElementById('jam4').innerText = j4;
-  document.getElementById('menit4').innerText = m4;
-  document.getElementById('detik4').innerText = d4;
-}
-setInterval( function(){
-  CountdownGeo2();
-}, 1000);
-
 // Modal update log
 const modal = document.querySelector('.modal');
 
