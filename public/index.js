@@ -31,6 +31,11 @@ function clock() {
     s = "0" + s;
   }
 
+  if (h >= 3) {
+    selamat.innerHTML = "Selamat Pagi . . .";
+    absent.innerHTML = "";
+  }
+
   if (h >= 6) {
     selamat.innerHTML = "Selamat Pagi, jangan lupa absen";
     absent.innerHTML = "Absen disini~";
