@@ -46,7 +46,7 @@ function clock() {
     absent.innerHTML = "";
   }
 
-  if (h >= 12) {
+  if (h >= 11) {
     selamat.innerHTML = "Selamat Siang . . .";
     absent.innerHTML = "";
   }
@@ -56,7 +56,7 @@ function clock() {
     absent.innerHTML = "";
   }
 
-  if (h >= 18) {
+  if (h >= 19) {
     selamat.innerHTML = "Selamat Malam . . .";
     absent.innerHTML = "";
   }
