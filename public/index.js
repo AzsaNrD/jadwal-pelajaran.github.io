@@ -94,7 +94,7 @@ function CountdownPKWU() {
   if (gap < 0) {
     clearInterval(CountdownPKWU);
     document.getElementById("countdown1").innerHTML = "";
-    document.getElementById("timeOutPKWU").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+    document.getElementById("timeOutPKWU").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
 setInterval( function(){
@@ -126,7 +126,7 @@ function CountdownMtk() {
   if (gap < 0) {
     clearInterval(CountdownMtk);
     document.getElementById("countdown3").innerHTML = "";
-    document.getElementById("timeOutMtk").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+    document.getElementById("timeOutMtk").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
 setInterval( function(){
@@ -158,7 +158,7 @@ function CountdownSj() {
   if (gap < 0) {
     clearInterval(CountdownSj);
     document.getElementById("countdown4").innerHTML = "";
-    document.getElementById("timeOutSj").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+    document.getElementById("timeOutSj").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
 setInterval( function(){
@@ -191,7 +191,7 @@ function CountdownBs() {
   if (gap < 0) {
     clearInterval(CountdownBs);
     document.getElementById("countdown5").innerHTML = "";
-    document.getElementById("timeOutBs").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+    document.getElementById("timeOutBs").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
 setInterval( function(){
@@ -223,7 +223,7 @@ function CountdownOl() {
   if (gap < 0) {
     clearInterval(Countdown6);
     document.getElementById("countdownOl").innerHTML = "";
-    document.getElementById("timeOutOl").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+    document.getElementById("timeOutOl").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
 setInterval( function(){
