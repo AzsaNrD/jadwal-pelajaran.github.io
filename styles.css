@@ -575,14 +575,56 @@ video {
 	--tw-ring-shadow: 0 0 #0000;
 	--tw-shadow: 0 0 #0000;
 }
+.container{
+	width: 100%;
+}
+@media (min-width: 640px){
+
+	.container{
+		max-width: 640px;
+	}
+}
+@media (min-width: 768px){
+
+	.container{
+		max-width: 768px;
+	}
+}
+@media (min-width: 1024px){
+
+	.container{
+		max-width: 1024px;
+	}
+}
+@media (min-width: 1280px){
+
+	.container{
+		max-width: 1280px;
+	}
+}
+@media (min-width: 1536px){
+
+	.container{
+		max-width: 1536px;
+	}
+}
 .fixed{
 	position: fixed;
+}
+.absolute{
+	position: absolute;
+}
+.relative{
+	position: relative;
 }
 .top-0{
 	top: 0px;
 }
 .left-0{
 	left: 0px;
+}
+.z-0{
+	z-index: 0;
 }
 .m-0{
 	margin: 0px;
@@ -642,6 +684,9 @@ video {
 }
 .h-4{
 	height: 1rem;
+}
+.h-full{
+	height: 100%;
 }
 .h-screen{
 	height: 100vh;
