@@ -165,6 +165,46 @@ setInterval( function(){
   CountdownSj();
 }, 1000);
 
+
+// Countdown5 sunda
+var countDate5 = new Date('August 20 2021 12:00:00').getTime();
+
+function CountdownBs() {
+  var now = new Date().getTime();
+  gap = countDate5 - now
+
+  var detik5 = 1000;
+  var menit5 = detik5 * 60;
+  var jam5 = menit5 * 60;
+  var hari5 = jam5 * 24;
+  
+  var h5 = Math.floor(gap / (hari5));
+  var j5 = Math.floor((gap % (hari5)) / (jam5));
+  var m5 = Math.floor((gap % (jam5)) / (menit5));
+  var d5 = Math.floor((gap % (menit5) / (detik5)));
+
+  document.getElementById('hari5').innerText = h5;
+  document.getElementById('jam5').innerText = j5;
+  document.getElementById('menit5').innerText = m5;
+  document.getElementById('detik5').innerText = d5;
+
+  if (gap < 0) {
+    clearInterval(CountdownBs);
+    document.getElementById("countdown5").innerHTML = "";
+    document.getElementById("timeOutBs").innerHTML = "Telah lewat tenggat waktu, terima kasih";
+  }
+}
+setInterval( function(){
+  CountdownBs();
+}, 1000);
+
+
+
+
+
+
+
+
 // Modal update log
 const modal = document.querySelector('.modal');
 

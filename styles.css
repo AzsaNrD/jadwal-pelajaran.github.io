@@ -884,13 +884,13 @@ video {
 	--tw-text-opacity: 1;
 	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
-.text-gray-500{
-	--tw-text-opacity: 1;
-	color: rgba(107, 114, 128, var(--tw-text-opacity));
-}
 .text-blue-500{
 	--tw-text-opacity: 1;
 	color: rgba(59, 130, 246, var(--tw-text-opacity));
+}
+.text-gray-500{
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
 }
 .text-red-500{
 	--tw-text-opacity: 1;
@@ -1037,11 +1037,6 @@ video {
 	.md\:text-lg{
 		font-size: 1.125rem;
 		line-height: 1.75rem;
-	}
-
-	.md\:text-xs{
-		font-size: 0.75rem;
-		line-height: 1rem;
 	}
 
 	.md\:hover\:scale-110:hover{
