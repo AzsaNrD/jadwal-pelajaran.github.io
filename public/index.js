@@ -101,39 +101,6 @@ setInterval( function(){
   CountdownPKWU();
 }, 1000);
 
-// Countdown2 Geografi
-var countDate2 = new Date('August 19 2021 18:00:00').getTime();
-
-function CountdownGeo() {
-
-  var now = new Date().getTime();
-  gap = countDate2 - now
-
-  var detik2 = 1000;
-  var menit2 = detik2 * 60;
-  var jam2 = menit2 * 60;
-  var hari2 = jam2 * 24;
-  
-  var h2 = Math.floor(gap / (hari2));
-  var j2 = Math.floor((gap % (hari2)) / (jam2));
-  var m2 = Math.floor((gap % (jam2)) / (menit2));
-  var d2 = Math.floor((gap % (menit2) / (detik2)));
-
-  document.getElementById('hari2').innerText = h2;
-  document.getElementById('jam2').innerText = j2;
-  document.getElementById('menit2').innerText = m2;
-  document.getElementById('detik2').innerText = d2;
-
-  if (gap < 0) {
-    clearInterval(CountdownGeo);
-    document.getElementById("countdown2").innerHTML = "";
-    document.getElementById("timeOutGeo").innerHTML = "Telah lewat tenggat waktu, terima kasih";
-  }
-}
-setInterval( function(){
-  CountdownGeo();
-}, 1000);
-
 // Countdown3 Matematika
 var countDate3 = new Date('August 20 2021 23:59:00').getTime();
 
