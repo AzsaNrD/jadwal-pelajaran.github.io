@@ -70,7 +70,7 @@ var interval = setInterval(clock, 1000);
 
 // Countdown1 PKWU
 
-var countDate = new Date('August 22 2021 24:00:00').getTime();
+var countDate = new Date('September 20 2021 24:00:00').getTime();
 
 function CountdownPKWU() {
   var now = new Date().getTime();
