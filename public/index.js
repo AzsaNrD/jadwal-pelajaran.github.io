@@ -70,7 +70,7 @@ var interval = setInterval(clock, 1000);
 
 // Countdown1 PKWU
 
-var countDate = new Date('August 23 2021 00:00:00').getTime();
+var countDate = new Date('August 22 2021 24:00:00').getTime();
 
 function CountdownPKWU() {
   var now = new Date().getTime();
@@ -102,7 +102,7 @@ setInterval( function(){
 }, 1000);
 
 // Countdown4 Sejindo
-var countDate4 = new Date('August 26 2021 19:00:00').getTime();
+var countDate4 = new Date('August 25 2021 19:00:00').getTime();
 
 function CountdownSj() {
   var now = new Date().getTime();
@@ -134,7 +134,7 @@ setInterval( function(){
 }, 1000);
 
 // Countdown6 Olahraga
-var countDate6 = new Date('August 23 2021 00:00:00').getTime();
+var countDate6 = new Date('August 22 2021 24:00:00').getTime();
 
 function CountdownOl() {
   var now = new Date().getTime();
