@@ -156,8 +156,8 @@ function CountdownOl() {
   document.getElementById('detikOl').innerText = dOl;
 
   if (gap < 0) {
-    clearInterval(Countdown6);
-    document.getElementById("countdownOl").innerHTML = "";
+    clearInterval(CountdownOl);
+    document.getElementById("countdown6").innerHTML = "";
     document.getElementById("timeOutOl").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
