@@ -134,35 +134,35 @@ setInterval( function(){
 }, 1000);
 
 // Countdown6 Olahraga
-var countDate6 = new Date('August 22 2021 24:00:00').getTime();
+var countDate6 = new Date('August 24 2021 12:00:00').getTime();
 
-function CountdownOl() {
+function CountdownAi() {
   var now = new Date().getTime();
   gap = countDate6 - now
 
-  var detikOl = 1000;
-  var menitOl = detikOl * 60;
-  var jamOl = menitOl * 60;
-  var hariOl = jamOl * 24;
+  var detikAi = 1000;
+  var menitAi = detikAi * 60;
+  var jamAi = menitAi * 60;
+  var hariAi = jamAi * 24;
   
-  var hOl = Math.floor(gap / (hariOl));
-  var jOl = Math.floor((gap % (hariOl)) / (jamOl));
-  var mOl = Math.floor((gap % (jamOl)) / (menitOl));
-  var dOl = Math.floor((gap % (menitOl) / (detikOl)));
+  var hAi = Math.floor(gap / (hariAi));
+  var jAi = Math.floor((gap % (hariAi)) / (jamAi));
+  var mAi = Math.floor((gap % (jamAi)) / (menitAi));
+  var dAi = Math.floor((gap % (menitAi) / (detikAi)));
 
-  document.getElementById('hariOl').innerText = hOl;
-  document.getElementById('jamOl').innerText = jOl;
-  document.getElementById('menitOl').innerText = mOl;
-  document.getElementById('detikOl').innerText = dOl;
+  document.getElementById('hariAi').innerText = hAi;
+  document.getElementById('jamAi').innerText = jAi;
+  document.getElementById('menitAi').innerText = mAi;
+  document.getElementById('detikAi').innerText = dAi;
 
   if (gap < 0) {
-    clearInterval(CountdownOl);
+    clearInterval(CountdownAi);
     document.getElementById("countdown6").innerHTML = "";
-    document.getElementById("timeOutOl").innerHTML = "Telah lewat tenggat waktu.";
+    document.getElementById("timeOutAi").innerHTML = "Telah lewat tenggat waktu.";
   }
 }
 setInterval( function(){
-  CountdownOl();
+  CountdownAi();
 }, 1000);
 
 
