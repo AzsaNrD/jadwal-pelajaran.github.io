@@ -133,8 +133,8 @@ setInterval( function(){
   CountdownSj();
 }, 1000);
 
-// Countdown6 Olahraga
-var countDate6 = new Date('August 24 2021 12:00:00').getTime();
+// Countdown6 Agama
+var countDate6 = new Date('August 28 2021 12:00:00').getTime();
 
 function CountdownAi() {
   var now = new Date().getTime();
